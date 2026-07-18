@@ -4,6 +4,17 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "Router-Top-Adapter",
+  "ioValues": [
+    {
+      "name": "width_x",
+      "ioValue": 10,
+      "currentEquation": "10"
+    },
+    {
+      "name": "length_y",
+      "ioValue": 10
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -20,8 +31,8 @@
     },
     {
       "atomType": "Import",
-      "x": 0.5552083333333333,
-      "y": 0.5319148936170213,
+      "x": 0.42083333333333334,
+      "y": 0.19148936170212766,
       "uniqueID": "id-4",
       "fileName": "Spindel-Gummi.svg",
       "name": "Import",
@@ -32,8 +43,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.6786458333333333,
-      "y": 0.6737588652482269,
+      "x": 0.61875,
+      "y": 0.5200945626477542,
       "uniqueID": "id-6",
       "ioValues": [
         {
@@ -42,7 +53,8 @@
         },
         {
           "name": "height",
-          "ioValue": 5
+          "ioValue": 3,
+          "currentEquation": "3"
         }
       ]
     },
@@ -75,6 +87,20 @@
       "resolution": 96,
       "importIndex": 0,
       "partName": "Router-Top-Adapter"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
+      "uniqueID": "id-18",
+      "name": "width_x"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.24615384615384617,
+      "uniqueID": "id-24",
+      "name": "length_y"
     }
   ],
   "allConnectors": [
