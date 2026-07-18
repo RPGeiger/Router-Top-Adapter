@@ -1,13 +1,95 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Router-Top-Adapter",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Router-Top-Adapter",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Import",
+      "x": 0.5552083333333333,
+      "y": 0.5319148936170213,
+      "uniqueID": "id-4",
+      "fileName": "Spindel-Gummi.svg",
+      "name": "Import",
+      "type": "SVG",
+      "repoOwner": "RPGeiger",
+      "repoName": "Router-Top-Adapter",
+      "SVGwidth": 71.5
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.6786458333333333,
+      "y": 0.6737588652482269,
+      "uniqueID": "id-6",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 5
+        }
+      ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.8078124999999999,
+      "y": 0.4184397163120568,
+      "uniqueID": "id-13",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STL",
+          "currentEquation": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Router-Top-Adapter",
+          "currentEquation": "Router-Top-Adapter"
+        }
+      ],
+      "type": "STL",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Router-Top-Adapter"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-6"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-6",
+      "ap2ID": "id-13"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
